@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.inicio {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 95vh;
+	width: 100vw;
+	font-size: 3.5dvh;
+}
+.personagem {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+.inicio button {
+	width: 100vw;
+	margin: 0.5rem;
+	height: 7.5dvh;
+	font-size: 2.5dvh;
+	border: 0.2px solid black;
+}
+.nivel {
+	display: flex;
+	justify-content: flex-end;
+}
+.box-nivel button {
+	justify-content: center;
+	display: flex;
+	width: 10%;
+	height: 5%;
+	border: 1px solid black;
+}
+.box-nivel {
+	font-size: 1dvh;
+}
+#tabela {
+	display: none;
+}
+table, .box-result {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 95vh;
+	width: 100vw;
+}
+.box-result {
+	display: none;
+}
+.empate, .bomba, .explosao {
+	flex-direction: column;
+}
+.empate, .bomba, .explosao {
+	display: none;
+}
+.empate button, .bomba button, .explosao button {
+	width: 100%;
+	height: 2rem;
+	border: 1px solid black;
+}
+.empate p, .bomba p, .explosao p {
+	font-size: 2.5rem;
+}
+.box-tic td, .box-tac td, .box-toe td {
+	height: 20vh;
+	width: 20vh;
+	border: 1px solid #000000;
+}
+.box-tic td:hover, .box-tac td:hover, .box-toe td:hover, button:hover {
+	cursor: pointer;
+	transition: 0.5s ease;
+	background-color: #C9FFFFFF;
+}
+.box-tic td, .box-tac td {
+	border-top: none;
+	border-right: none;
+}
+.box-tic td:first-child, .box-tac td:first-child, .box-toe td:first-child {
+	border-left: none;
+}
+.box-toe td {
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+}
+img {
+	height: 100%;
+	width: 100%;
+	display: none;
+}

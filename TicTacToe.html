@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="TicTacToe.css">
+</head>
+<body>
+	<div class="dificuldade" id="dificuldade">
+		<div class="box-nivel">
+			<div class="nivel">
+				<button id="facil" onclick="escolherDificuldade(event)" data-dificuldade="facil">Fácil</button>
+			</div>
+		</div>
+	</div>
+	<div class="inicio" id="inicio">
+		<h1>Jogo da velha</h1>
+		<p>Escolha o seu personagem:</p>
+		<div class="personagem">
+			<button id="bomba" onclick="escolherPersonagem(event)" data-personagem="bomba">Bomba</button>
+			<button id="explosao" onclick="escolherPersonagem(event)" data-personagem="explosao">Explosão</button>
+		</div>
+	</div>
+	<table id="tabela">
+		<tr class="box-tic">
+			<td onclick="jogo(event)" data-col="0" data-row="0"><img src="" id="img"></td>
+			<td onclick="jogo(event)" data-col="0" data-row="1"><img src="" id="img"></td>
+			<td onclick="jogo(event)" data-col="0" data-row="2"><img src="" id="img"></td>
+		</tr>
+
+		<tr class="box-tac">
+			<td onclick="jogo(event)" data-col="1" data-row="0"><img src="" id="img"></td>
+			<td onclick="jogo(event)" data-col="1" data-row="1"><img src="" id="img"></td>
+			<td onclick="jogo(event)" data-col="1" data-row="2"><img src="" id="img"></td>
+		</tr>
+
+		<tr class="box-toe">
+			<td onclick="jogo(event)" data-col="2" data-row="0"><img src="" id="img"></td>
+			<td onclick="jogo(event)" data-col="2" data-row="1"><img src="" id="img"></td>
+			<td onclick="jogo(event)" data-col="2" data-row="2"><img src="" id="img"></td>
+		</tr>
+	</table>
+	<div class="box-result" id="box">
+		<div class="empate" id="draw">
+			<p>O jogou deu empate!</p>
+			<button onclick="newGame()">New Game</button>
+		</div>
+		<div class="ganhador">
+			<div class="bomba" id="bomb">
+				<p>A bomba ganhou!</p>
+				<button onclick="newGame()">New Game</button>
+			</div>
+			<div class="explosao" id="explosion">
+				<p>A explosão ganhou!</p>
+				<button onclick="newGame()">New Game</button>
+			</div>
+		</div>	
+	</div>
+</body>
+
+<script src="TicTacToe.js"></script>
+
+</html>
